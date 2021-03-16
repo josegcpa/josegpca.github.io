@@ -16,23 +16,24 @@ I am currently wrapping up my PhD at the [European Bioinformatics Institute](htt
 
 I currently work on computational oncobiology with a heavy focus on haematological cancers. My PhD project is divided into two distinct avenues:
 
-1. The study and exploration of the morphological determinants of myelodysplastic syndromes in whole blood slides through the use of computer vision and machine learning and deep learning
+1. The study and exploration of the morphological determinants of myelodysplastic syndromes in whole blood slides through the use of computer vision, particularly machine learning- and deep learning-based approaches
 2. The comprehensive assessment of clonal dynamics in clonal haematopoiesis through the use of longitudinal targetted sequencing and robust statistical methods such as MCMC
 
 Previously, during my MSc, my work focused on approaches based on machine-learning to predict important residues in protein-protein interfaces.
 
 # Relevant research experience
 
-**[2017,Present]** Cancer Data Science (Moritz Gerstung @ EMBL-EBI) - PhD fellow
-**[2016,2017]** Data-Driven Molecular Design (Irina Moreira @ CNC-UC) - MSc thesis
+**[2017, Present]** Cancer Data Science (Moritz Gerstung @ EMBL-EBI) - PhD fellow
+
+**[2016, 2017]** Data-Driven Molecular Design (Irina Moreira @ CNC-UC) - MSc thesis
 
 # Education
 
-**[2017,present]** PhD in Biological Sciences - University of Cambridge, UK
+**[2017, present]** PhD in Biological Sciences - University of Cambridge, UK
 Thesis: Computational studies of blood cells - morphology and evolution
 
-**[2015,2017]** MSc in Cell and Molecular Biology (with a specialisation in neurosciences)
+**[2015, 2017]** MSc in Cell and Molecular Biology (with a specialisation in neurosciences)
 Thesis: [Computational methods for the understanding of protein-based interactions](http://hdl.handle.net/10316/82909)
 
-**[2012,2015]** BSc in Biochemistry - Autonomous University of Barcelona, ES
+**[2012, 2015]** BSc in Biochemistry - Autonomous University of Barcelona, ES
 Final project: Differential expression of PD-1/PD-L1 in individuals with chronic myeloid leukaemia 
