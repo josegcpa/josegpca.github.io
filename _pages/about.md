@@ -29,11 +29,8 @@ Previously, during my MSc, my work focused on approaches based on machine-learni
 
 # Education
 
-**[2017, present]** PhD in Biological Sciences - University of Cambridge, UK
-Thesis: Computational studies of blood cells - morphology and evolution
+**[2017, present]** PhD in Biological Sciences - University of Cambridge, UK. *Thesis: Computational studies of blood cells - morphology and evolution*
 
-**[2015, 2017]** MSc in Cell and Molecular Biology (with a specialisation in neurosciences)
-Thesis: [Computational methods for the understanding of protein-based interactions](http://hdl.handle.net/10316/82909)
+**[2015, 2017]** MSc in Cell and Molecular Biology (with a specialisation in neurosciences) - Universidade de Coimbra, PT. *Thesis: [Computational methods for the understanding of protein-based interactions](http://hdl.handle.net/10316/82909)*
 
-**[2012, 2015]** BSc in Biochemistry - Autonomous University of Barcelona, ES
-Final project: Differential expression of PD-1/PD-L1 in individuals with chronic myeloid leukaemia 
+**[2012, 2015]** BSc in Biochemistry - Universidade de Coimbra, PT. *Final project: Differential expression of PD-1/PD-L1 in individuals with chronic myeloid leukaemia*
