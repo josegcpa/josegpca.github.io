@@ -73,37 +73,37 @@ Publications
 Skills
 ======
 ### Programming 
-*I have been programming actively for 4 years, with a large focus on machine learning, statistics and data science*
+*5 years of programming experience in bioinformatics/data science*
 
-#### Relevant languages
+#### Languages
 * `Python` - advanced user
 * `R` - advanced user
 * `bash` - regular user
 * `C++` - beginner, currently learning
 #### Deep learning (DL)
-* Relevant packages: `tensorflow` (`Python`), `pytorch` (`Python`)
+* Packages: `tensorflow` (`Python`), `pytorch` (`Python`)
 #### Machine learning (ML)
-* Relevant packages: `scikit-learn` (`Python`), `caret` (`R`) 
+* Packages: `scikit-learn` (`Python`), `caret` (`R`) 
 #### Computer vision (CV)
-* Relevant packages: `opencv`, `scikit-image` (`Python`)
+* Packages: `opencv`, `scikit-image` (`Python`)
+#### High performance computing (HPC)
+* Environments: `LSF`
+#### Containerization and workflow management
+* Software: `Docker`, `snakemake`
 
 ### Statistical analysis and data science
 
-* Application of both frequentist and Bayesian methods for inferential and predictive statistics
-* Development of approaches to disentangle the effects of different factors in specific problems, namely modelling longitudinal deep and targetted sequencing data
-* Supervised and unsupervised machine learning, with a particular focus on the former for the classification of hot-spots in protein-protein interfaces and haematologic disorders using whole blood slide imaging data
-* Development of a framework for multiple instance and vocabulary learning approach to create a "vocabulary of cells" for the classification of haematologic disorders
+* Frequentist and Bayesian methods for inferential and predictive statistics
+* Supervised and unsupervised machine learning 
 
 ### Data visualisation
 
-* I work mainly with `ggplot2` and have also worked with `plotly` in `R`, mostly using these for scientific figure design
-* Very basic `d3.js` knowledge
+* Scientific data visualisation (using `ggplot2` and `plotly` in R)
+* Basic `d3.js` knowledge
 
 ### Web platform design/implementation
 
-* I have developed a few platforms (such as this website) and other projects such as:
-    * A platform dedicated to poll data visualisation, education and interpretation ([here](https://zegui7.shinyapps.io/B-A-BA-Sondagens/) - this is available only in Portuguese)
-    * Early work on a [DxR-G-protein/Arrestin interaction visualiser](http://www.moreiralab.com/resources/dxr/) that was done for a [publication](https://pubs.acs.org/doi/10.1021/acs.jcim.0c00371)
+* I have developed a few platforms (such as this website) and other projects which can be consulted in this [portfolio](https://josegcpa.ml/data-viz/). I also did early work on a [DxR-G-protein/Arrestin interaction visualiser](http://www.moreiralab.com/resources/dxr/) that was done for a [publication](https://pubs.acs.org/doi/10.1021/acs.jcim.0c00371)
 
 Talks
 ======
