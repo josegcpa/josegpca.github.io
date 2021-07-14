@@ -16,3 +16,4 @@ In Portuguese:
 * [Pharaoh Sanders, Floating Points & The London Symphony Orchestra - Promises](https://www.thresholdmagazine.pt/2021/03/review-pharaoh-sanders-floating-points.html) - review of the collaborative album "Promises" that combines Pharaoh Sanders, Floating Points and the London Symphony Orchestra
 * [As ciências do ód - Superior de Angela Saini](https://mrnauc.wordpress.com/2021/07/10/as-ciencias-do-odio-superior-de-angela-saini/) - review of Angela Saini's Superior
 * [Porque é que os modelos erram](https://mrnauc.wordpress.com/2021/07/10/porque-e-que-os-modelos-erram/) - explainer on the scientific background of epidemiological modelling and on the degeneration of its conclusions upon communication to the public
+* ["Factos" nao sao factos - um caso pratico de desinformacao baseado em "ciencia"](https://josegcpa.ml/_pages/Factosnosofactosumcasoprticodedesinformao) - debunking of ludicrous claims regarding COVID-19 made in an article for Observador
