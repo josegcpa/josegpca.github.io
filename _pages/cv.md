@@ -11,8 +11,8 @@ redirect_from:
 
 # <ins>Education</ins>
 * BSc in Biochemistry, University of Coimbra, 2012-2015
-* MSc in Cell and Molecular Biology (with a neurosciences specialisation), University of Coimbra, 2015-2017 (with honours)
-* PhD in Biological Sciences, European Bioinformatics Institute/University of Cambridge, 2017-2021 (ongoing)
+* MSc in Cell and Molecular Biology (neuroscience track), University of Coimbra, 2015-2017 (with honours)
+* PhD in Biological Sciences, European Bioinformatics Institute/University of Cambridge, 2017-2022 (ongoing)
 
 # <ins>Research experience</ins>
 ### October 2017 - present: PhD student
@@ -58,6 +58,15 @@ Chemistry Center of Coimbra/Biological Chemistry Group and Molecular Physical-Ch
 * Non-scientific publications
     * [BAME and COVID-19](https://www.scientistsforlabour.org.uk/post/bame-and-covid-19), Scientists for Labour (2020) - a detailed assessment of the disproportionate impact of COVID-19 on individuals with a BAME background in the UK
 
+# <ins>Scientific presentations</ins>
+## Oral presentations
+* A Machine Learning Based Protein-Protein Hot-Spot Prediction Method - SpotOn. EJIBCE. Lisbon. (2016)
+* Using big-data to understand the protein interface landscape. EJIBCE. Coimbra. (2017)
+* Leveraging Automated Blood Cell Morphology for Myelodysplastic Syndrome Diagnosis and Prognosis Prediction. Quantitative BioImaging Conference. Oxford. (2020)
+
+## Poster presentations
+* The Natural History of Clonal Haematopoiesis. CRUK Cambridge Centre Early Detection Programme 6th Annual Symposium. Cambridge (2021)
+
 # <ins>Skills</ins>
 ## Programming
 *5 years of programming experience in bioinformatics/data science*
@@ -81,24 +90,15 @@ Environments: `LSF`
 Software: `Docker`, `Kubernetes`, `snakemake`
 
 ## Statistical analysis and data science
-Frequentist and Bayesian methods for inferential and predictive statistics;<br>
+Frequentist and Bayesian methods for inferential and predictive statistics<br>
 Supervised and unsupervised machine learning 
 
 ## Data visualisation
-Scientific data visualisation (using `ggplot2` and `plotly` in R);<br>
+Scientific data visualisation (using `ggplot2` and `plotly` in R)<br>
 Basic `d3.js` knowledge
 
 ## Web platform design/implementation
 I have developed a few platforms (such as this website) and other projects which can be consulted in this [portfolio](https://josegcpa.ml/data-viz/). I also did early work on a [DxR-G-protein/Arrestin interaction visualiser](http://www.moreiralab.com/resources/dxr/) that was done for a [publication](https://pubs.acs.org/doi/10.1021/acs.jcim.0c00371)
-
-# <ins>Scientific presentations</ins>
-## Oral presentations
-* A Machine Learning Based Protein-Protein Hot-Spot Prediction Method - SpotOn. EJIBCE. Lisbon. (2016)
-* Using big-data to understand the protein interface landscape. EJIBCE. Coimbra. (2017)
-* Leveraging Automated Blood Cell Morphology for Myelodysplastic Syndrome Diagnosis and Prognosis Prediction. Quantitative BioImaging Conference. Oxford. (2020)
-
-## Poster presentations
-* The Natural History of Clonal Haematopoiesis. CRUK Cambridge Centre Early Detection Programme 6th Annual Symposium. Cambridge (2021)
 
 # <ins>Teaching</ins>
   <ul>{% for post in site.teaching reversed %}
@@ -107,13 +107,13 @@ I have developed a few platforms (such as this website) and other projects which
   
 # <ins>Service, collaboration and leadership</ins>
 * Co-founder of JEST, a junior enterprise focused on providing data science training and services (2016)
-* Co-director of programming and radio broadcaster in Radio Universidade de Coimbra, a student-ran radio dedicated to teaching radio broadcasting to the general community, where I helped coordinating the department that is responsible for the musical and entertainment content (2016-2017)
-* Stage director and manager of Palco RUC, an alternative music festival. In this role I contacted several tens of artists and coordinated their arrivals and departures, coordinated a team of chaperones that looked out for the performers, and planned/arranged whatever was required for each performance (2016)
-* Integrated several teams in student unions, where I helped reformulate the curriculum for the Biochemistry BSc. in the University of Coimbra as a student representative in several meetings with professors and degree coordinatores and organised activities in the context of ecological and civil service sensibilisation (2013-2015)
+* Co-director of programming and radio broadcaster in Radio Universidade de Coimbra, a student-ran radio dedicated to teaching radio broadcasting to the general community (2016-2017)
+* Stage director, curator and manager of Palco RUC, an alternative music festival attended by hundreds-thousands of people each year. (2016)
+* Active member in student unions. Helped reformulate the curriculum during my BSc. through meetings with students and professors. Organised activities in the context of ecological and civil service sensibilisation and participation (2013-2015)
 
 # <ins>Other skills</ins>
 * Science communication, with regular contributions to [RNA Mensageiro](https://mrnauc.wordpress.com/), an annual biochemistry student and alumni magazine
-* Musical producer and member of a musical production collective, Ciga239, focused on artists with links to Coimbra
+* Musical producer and part of Ciga239, an artistic collective from Coimbra
 * Raspberry pi tinkering
 
 # <ins>Language Skills</ins>
