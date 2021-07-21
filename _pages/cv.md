@@ -18,33 +18,33 @@ redirect_from:
 ### October 2017 - present: PhD student
 European Bioinformatics Institute<br>
 *Principal investigators: Moritz Gerstung and George S. Vassiliou*<br>
-Leveraging modern computer vision (with a particular focus on deep learning) to understand morphological differences in blood cells, with a focus on haematological cancers;<br>
+**Description:** Leveraging modern computer vision (with a particular focus on deep learning) to understand morphological differences in blood cells, with a focus on haematological cancers;<br>
 Using longitudinal sequencing data and statistical modelling to capture the dynamics of somatic mutation evolution in individuals with clonal haematopoiesis
 
 ### May 2016 - September 2017: Research intern (MSc. thesis)
 Center for Neuroscience and Cell Biology<br>
 *Principal investigators: Irina S. Moreira*<br>
-Using machine learning and computational tools to study the structure of protein complexes, with a particular focus on their interface. Developed tools that improve the prediction of hot-spots in protein interfaces and computational protocols for complexes with no known structure
+**Description:** Using machine learning and computational tools to study the structure of protein complexes, with a particular focus on their interface. Developed tools that improve the prediction of hot-spots in protein interfaces and computational protocols for complexes with no known structure
 
 ### Spring 2016: Research intern
 Biocant<br>
 *Principal investigators: Armindo Salvador*<br>
-ODE models of the peroxiredoxin pathway in yeast using Wolfram Mathematica and COPASI
+**Description:** ODE models of the peroxiredoxin pathway in yeast using Wolfram Mathematica and COPASI
 
 ### Winter 2016: Research Intern
 Biophysics Laboratory - Universidade de Coimbra<br>
 *Principal investigators: Emilia Quintas-Ferreira*<br>
-Using a perfusion system to study how tolbutamide affects TEA-induced LTP, specifically regarding the release of zinc in the CA3 area of hippocampal slices
+**Description:** Using a perfusion system to study how tolbutamide affects TEA-induced LTP, specifically regarding the release of zinc in the CA3 area of hippocampal slices
 
 ### Spring/Summer 2015: Research Intern (BSc. final year project)
 Laboratory of Immunology and Oncology - Universidade de Coimbra<br>
 *Principal investigators: Paulo Rodrigues Santos*<br>
-Studying the differential expression of PD-1/PD-L1 in invidividuals suffering from chronic myeloid leukaemia using flow cytommetry
+**Description:** Studying the differential expression of PD-1/PD-L1 in invidividuals suffering from chronic myeloid leukaemia using flow cytommetry
 
 ### Summer 2014: Research Intern 
 Chemistry Center of Coimbra/Biological Chemistry Group and Molecular Physical-Chemistry I&D Center - Universidade de Coimbra<br>
 *Principal investigators: Maria Margarida Castro and Maria Paulo Matos Marques*<br>
-Using NMR to characterise MRI agents (2 weeks) and using vibrational spectroscopy to characterise polyamine complexes in cancer cell cultures
+**Description:** Using NMR to characterise MRI agents (2 weeks) and using vibrational spectroscopy to characterise polyamine complexes in cancer cell cultures
 
 # <ins>Publications</ins>
   <ul>{% for post in site.publications_current reversed %}
@@ -63,39 +63,33 @@ Using NMR to characterise MRI agents (2 weeks) and using vibrational spectroscop
 *5 years of programming experience in bioinformatics/data science*
 
 ### Languages
-* `Python` - advanced user
-* `R` - advanced user
-* `bash` - regular user
-* `C++` - beginner, currently learning
+`Python` (advanced user), `R` (advanced user), `bash` (regular user), `C++` (beginner, currently learning)
 
 ### Deep learning (DL)
-* Packages: `tensorflow` (`Python`), `pytorch` (`Python`)
+Packages: `tensorflow` (`Python`), `pytorch` (`Python`)
 
 ### Machine learning (ML)
-* Packages: `scikit-learn` (`Python`), `caret` (`R`) 
+Packages: `scikit-learn` (`Python`), `caret` (`R`) 
 
 ### Computer vision (CV)
-* Packages: `opencv`, `scikit-image` (`Python`)
+Packages: `opencv`, `scikit-image` (`Python`)
 
 ### High performance computing (HPC)
-* Environments: `LSF`
+Environments: `LSF`
 
 ### Containerization and workflow management
-* Software: `Docker`, `Kubernetes`, `snakemake`
+Software: `Docker`, `Kubernetes`, `snakemake`
 
 ## Statistical analysis and data science
-
-* Frequentist and Bayesian methods for inferential and predictive statistics
-* Supervised and unsupervised machine learning 
+Frequentist and Bayesian methods for inferential and predictive statistics;<br>
+Supervised and unsupervised machine learning 
 
 ## Data visualisation
-
-* Scientific data visualisation (using `ggplot2` and `plotly` in R)
-* Basic `d3.js` knowledge
+Scientific data visualisation (using `ggplot2` and `plotly` in R);<br>
+Basic `d3.js` knowledge
 
 ## Web platform design/implementation
-
-* I have developed a few platforms (such as this website) and other projects which can be consulted in this [portfolio](https://josegcpa.ml/data-viz/). I also did early work on a [DxR-G-protein/Arrestin interaction visualiser](http://www.moreiralab.com/resources/dxr/) that was done for a [publication](https://pubs.acs.org/doi/10.1021/acs.jcim.0c00371)
+I have developed a few platforms (such as this website) and other projects which can be consulted in this [portfolio](https://josegcpa.ml/data-viz/). I also did early work on a [DxR-G-protein/Arrestin interaction visualiser](http://www.moreiralab.com/resources/dxr/) that was done for a [publication](https://pubs.acs.org/doi/10.1021/acs.jcim.0c00371)
 
 # <ins>Scientific presentations</ins>
 ## Oral presentations
@@ -123,6 +117,4 @@ Using NMR to characterise MRI agents (2 weeks) and using vibrational spectroscop
 * Raspberry pi tinkering
 
 # <ins>Language Skills</ins>
-* Portuguese - proficient 
-* English - proficient
-* Spanish - beginner
+Portuguese (proficient), English (proficient), Spanish (beginner)
