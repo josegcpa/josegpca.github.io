@@ -68,37 +68,15 @@ Chemistry Center of Coimbra/Biological Chemistry Group and Molecular Physical-Ch
 * The Natural History of Clonal Haematopoiesis. CRUK Cambridge Centre Early Detection Programme 6th Annual Symposium. Cambridge (2021)
 
 # <ins>Skills</ins>
-## Programming
-*5 years of programming experience in bioinformatics/data science*
-
-### Languages
-`Python` (advanced user), `R` (advanced user), `bash` (regular user), `C++` (beginner, currently learning)
-
-### Deep learning (DL)
-Packages: `tensorflow` (`Python`), `pytorch` (`Python`)
-
-### Machine learning (ML)
-Packages: `scikit-learn` (`Python`), `caret` (`R`) 
-
-### Computer vision (CV)
-Packages: `opencv`, `scikit-image` (`Python`)
-
-### High performance computing (HPC)
-Environments: `LSF`
-
-### Containerization and workflow management
-Software: `Docker`, `Kubernetes`, `snakemake`
-
-## Statistical analysis and data science
-Frequentist and Bayesian methods for inferential and predictive statistics<br>
-Supervised and unsupervised machine learning 
-
-## Data visualisation
-Scientific data visualisation (using `ggplot2` and `plotly` in R)<br>
-Basic `d3.js` knowledge
-
-## Web platform design/implementation
-I have developed a few platforms (such as this website) and other projects which can be consulted in this [portfolio](https://josegcpa.ml/data-viz/). I also did early work on a [DxR-G-protein/Arrestin interaction visualiser](http://www.moreiralab.com/resources/dxr/) that was done for a [publication](https://pubs.acs.org/doi/10.1021/acs.jcim.0c00371)
+## Programming (5 years)
+* Programming languages: `Python` (advanced user), `R` (advanced user), `bash` (regular user), `C++` (beginner, currently learning)
+* Machine learning (`scikit-learn` in `Python` and `caret` in `R`) and deep learning (`tensorflow` and `pytorch` in `Python`)
+* Computer vision (`opencv` and `scikit-image` in `Python`)
+* High performance computing environments (particularly `LSF`)
+* Databases (`postgresql`)
+* Containerization and workflow management (`Docker`, `Kubernetes`, `snakemake`)
+* Statistical analysis and data science - frequentist and Bayesian methods for inferential and predictive statistics as well as supervised and unsupervised machine learning 
+* Data visualisation and web platform design/implementationWeb platform design/implementation - scientific data visualisation (using `ggplot2` and `plotly` in R) and basic `d3.js` knowledge. Web platform development using `shiny` in `R` and `flask` in `python`. Please consult my [portfolio](https://josegcpa.ml/data-viz/) for more information
 
 # <ins>Teaching</ins>
   <ul>{% for post in site.teaching reversed %}
