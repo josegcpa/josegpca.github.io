@@ -13,38 +13,38 @@ redirect_from:
 * BSc in Biochemistry, University of Coimbra, 2012-2015
 * MSc in Cell and Molecular Biology (with a neurosciences specialisation), University of Coimbra, 2015-2017 (with honours)
 * PhD in Biological Sciences, European Bioinformatics Institute/University of Cambridge, 2017-2021 (ongoing)
-  
+
 # <ins>Research experience</ins>
 ### October 2017 - present: PhD student
 European Bioinformatics Institute<br>
 *Principal investigators: Moritz Gerstung and George S. Vassiliou*<br>
-- Leveraging modern computer vision (with a particular focus on deep learning) to understand morphological differences in blood cells, with a focus on haematological cancers;<br>
-- Using longitudinal sequencing data and statistical modelling to capture the dynamics of somatic mutation evolution in individuals with clonal haematopoiesis
+Leveraging modern computer vision (with a particular focus on deep learning) to understand morphological differences in blood cells, with a focus on haematological cancers;<br>
+Using longitudinal sequencing data and statistical modelling to capture the dynamics of somatic mutation evolution in individuals with clonal haematopoiesis
 
 ### May 2016 - September 2017: Research intern (MSc. thesis)
 Center for Neuroscience and Cell Biology<br>
 *Principal investigators: Irina S. Moreira*<br>
-- Using machine learning and computational tools to study the structure of protein complexes, with a particular focus on their interface. Developed tools that improve the prediction of hot-spots in protein interfaces and computational protocols for complexes with no known structure
+Using machine learning and computational tools to study the structure of protein complexes, with a particular focus on their interface. Developed tools that improve the prediction of hot-spots in protein interfaces and computational protocols for complexes with no known structure
 
 ### Spring 2016: Research intern
 Biocant<br>
 *Principal investigators: Armindo Salvador*<br>
-- ODE models of the peroxiredoxin pathway in yeast using Wolfram Mathematica and COPASI
+ODE models of the peroxiredoxin pathway in yeast using Wolfram Mathematica and COPASI
 
 ### Winter 2016: Research Intern
 Biophysics Laboratory - Universidade de Coimbra<br>
 *Principal investigators: Emilia Quintas-Ferreira*<br>
-- Using a perfusion system to study how tolbutamide affects TEA-induced LTP, specifically regarding the release of zinc in the CA3 area of hippocampal slices
+Using a perfusion system to study how tolbutamide affects TEA-induced LTP, specifically regarding the release of zinc in the CA3 area of hippocampal slices
 
 ### Spring/Summer 2015: Research Intern (BSc. final year project)
 Laboratory of Immunology and Oncology - Universidade de Coimbra<br>
 *Principal investigators: Paulo Rodrigues Santos*<br>
-- Studying the differential expression of PD-1/PD-L1 in invidividuals suffering from chronic myeloid leukaemia using flow cytommetry
+Studying the differential expression of PD-1/PD-L1 in invidividuals suffering from chronic myeloid leukaemia using flow cytommetry
 
 ### Summer 2014: Research Intern 
 Chemistry Center of Coimbra/Biological Chemistry Group and Molecular Physical-Chemistry I&D Center - Universidade de Coimbra<br>
 *Principal investigators: Maria Margarida Castro and Maria Paulo Matos Marques*<br>
-- Using NMR to characterise MRI agents (2 weeks) and using vibrational spectroscopy to characterise polyamine complexes in cancer cell cultures
+Using NMR to characterise MRI agents (2 weeks) and using vibrational spectroscopy to characterise polyamine complexes in cancer cell cultures
 
 # <ins>Publications</ins>
   <ul>{% for post in site.publications_current reversed %}
