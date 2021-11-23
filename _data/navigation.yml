@@ -10,4 +10,4 @@ main:
     url: /blog_posts/
     
   - title: "CV"
-    url: /cv/
+    url: /_data/cv.pdf
