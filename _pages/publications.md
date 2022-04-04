@@ -11,13 +11,10 @@ author_profile: true
 
 {% include base_path %}
 
-## Publications with current group (Gerstung Group @ EMBL-EBI)
-
+## Publications
 {% for post in site.publications_current reversed %}
   {% include archive-single.html %}
 {% endfor %}
-
-## Publications with previous groups 
 
 {% for post in site.publications_previous reversed %}
   {% include archive-single.html %}

@@ -10,26 +10,23 @@ redirect_from:
 
 # Bio
 
-I am currently wrapping up my PhD at the [European Bioinformatics Institute](https://www.ebi.ac.uk/) as an EMBL PhD fellow. I am jointly supervised by [Moritz Gerstung](https://www.ebi.ac.uk/research/gerstung) and [George Vassiliou](https://www.sanger.ac.uk/people/directory/vassiliou-george-s). Previously, I completed a Bachelor's degree in Biochemistry and a Master's degree in Cell and Molecular Biology with honours in the University of Coimbra. In my Master's thesis I worked with in [Irina Moreira's Data-Driven Molecular Design group](http://www.moreiralab.com).
+I currently am a post-doc with the [Computational Clinical Imaging Group](https://www.fchampalimaud.org/research/groups/papanikolaou) at the Champalimaud Centre for the Unknown, working on developing novel diagnostic tools for prostate cancer diagnosis using mpMRI. Previously, I did my PhD on the evolution and morphology of blood cells at the EMBL-EBI with [Moritz Gerstung](https://www.dkfz.de/en/kuenstliche-intelligenz-in-der-onkologie/index.php) and [George Vassiliou](https://www.stemcells.cam.ac.uk/people/pi/vassiliou), and my Master's thesis on protein binding prediction with [Irina Moreira's Data-Driven Molecular Design group](http://www.moreiralab.com).
 
 # Research
 
-I currently work on computational oncobiology with a heavy focus on haematological cancers. My PhD project is divided into two distinct avenues:
-
-1. The study and exploration of the morphological determinants of myelodysplastic syndromes in whole blood slides through the use of computer vision, particularly machine learning- and deep learning-based approaches
-2. The comprehensive assessment of clonal dynamics in clonal haematopoiesis through the use of longitudinal targetted sequencing and robust statistical methods such as MCMC
-
-Previously, during my MSc, my work focused on approaches based on machine-learning to predict important residues in protein-protein interfaces.
+I currently work on developing deep-learning models that can aid in better diagnostic tools for prostate cancer using mpMRI.
 
 # Relevant research experience
 
-**[2017, Present]** Cancer Data Science (Moritz Gerstung @ EMBL-EBI) - PhD fellow
+**[2022, Present]** Computational Clinical Imaging Group (Nickolas Papanikolaou @ EMBL-EBI) - Postdoctoral fellow
+
+**[2017, 2022]** Cancer Data Science (Moritz Gerstung @ EMBL-EBI) - PhD fellow
 
 **[2016, 2017]** Data-Driven Molecular Design (Irina Moreira @ CNC-UC) - MSc thesis
 
 # Education
 
-**[2017, present]** PhD in Biological Sciences - University of Cambridge, UK. *Thesis: Computational studies of blood cells - morphology and evolution*
+**[2017, 2022]** PhD in Biological Sciences - University of Cambridge, UK. *Thesis: Computational studies of blood cells - morphology and evolution*
 
 **[2015, 2017]** MSc in Cell and Molecular Biology (with a specialisation in neurosciences) - Universidade de Coimbra, PT. *Thesis: [Computational methods for the understanding of protein-based interactions](http://hdl.handle.net/10316/82909)*
 
