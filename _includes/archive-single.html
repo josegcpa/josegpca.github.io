@@ -31,7 +31,11 @@
     {% else %}
         <h2>{{ title }}</h2>
     {% endif %}
-    
+
+    {% if post.tweetorial %}    
+        <a href=" {{ post.tweetorial }} "><h3><i class="fi-xnsuxl-twitter-solid"></i> Tweetorial here!</h3></a>
+    {% endif %}
+
     {% if post.read_time %}
       <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
     {% endif %}
