@@ -4,6 +4,7 @@ collection: publications_previous
 excerpt: "A comprehensive look into the dynamics clonal haematopoiesis in older individuals using targetted longitudinal sequencing for over 300 individuals and phylogenetic and phylodynamic analysis of seven single-cell-derived haematopoietic trees"
 venue: BioRxiv (accepted in to Nature) 
 paperurl: "https://www.biorxiv.org/content/10.1101/2021.08.12.455048v1"
+tweetorial: "https://twitter.com/MoritzGerstung/status/1426144285485846534"
 date: 2021-08-13
 ---
 

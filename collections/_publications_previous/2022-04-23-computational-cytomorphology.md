@@ -4,6 +4,7 @@ collection: publications_previous
 excerpt: "Using machine-learning on peripheral blood smears to learn novel computational morphotypes for RBC and WBC and showing how these can be used to predict different haematological and anaemic conditions."
 venue: medRxiv
 paperurl: "https://www.medrxiv.org/content/10.1101/2022.04.19.22273757v1"
+tweetorial: "https://twitter.com/zga_aaa/status/1518536286566555653"
 date: 2022-04-23
 ---
 
