@@ -26,7 +26,7 @@ I currently work on developing deep-learning models that can aid in better diagn
 
 # Education
 
-**[2017, 2022]** PhD in Biological Sciences - University of Cambridge, UK. *Thesis: Computational studies of blood cells - morphology and evolution*
+**[2017, 2022]** PhD in Biological Sciences - University of Cambridge, UK. *Thesis: [Computational analyses of blood cells: somatic evolution and morphology](https://www.repository.cam.ac.uk/handle/1810/338260)*
 
 **[2015, 2017]** MSc in Cell and Molecular Biology (with a specialisation in neurosciences) - Universidade de Coimbra, PT. *Thesis: [Computational methods for the understanding of protein-based interactions](http://hdl.handle.net/10316/82909)*
 
