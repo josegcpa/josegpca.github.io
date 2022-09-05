@@ -47,6 +47,9 @@ layout: none
                 <br><br>
                 <h4>Data visualization for "Computational analysis of peripheral blood smears detects disease-associated cytomorphologies"</h4>
 
+                <br>
+                <h4>Loading the U-MAP may take a few seconds!</h4>
+                <br>
                 <div id="cell_type" class="btn-group">
                     <h5>Cell type</h5>
                     <button type="button" value="wbc" class="btn btn-default">WBC</button>
@@ -209,8 +212,8 @@ layout: none
             .style("opacity",0)
             .remove()
     }
-    const wbc_dataset = d3.json("/json/wbc.json");
-    const rbc_dataset = d3.json("/json/rbc.json");
+    const wbc_dataset = d3.json("https://media.githubusercontent.com/media/josegcpa/json-haemorasis/main/wbc.json");
+    const rbc_dataset = d3.json("https://media.githubusercontent.com/media/josegcpa/json-haemorasis/main/rbc.json");
     const datasets = {
         "wbc":wbc_dataset,
         "rbc":rbc_dataset
