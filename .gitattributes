@@ -1,2 +1,0 @@
-json/wbc.json filter=lfs diff=lfs merge=lfs -text
-json/rbc.json filter=lfs diff=lfs merge=lfs -text
