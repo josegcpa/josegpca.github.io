@@ -1,0 +1,464 @@
+---
+permalink: /haemorasis-umap
+layout: none
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="icon" href="/images/microscope.png">
+
+    <title>Blood Morphotypes</title>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link data-require="bootstrap-css@3.1.1" data-semver="3.1.1" rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+    <script data-require="jquery@*" data-semver="2.1.1" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script data-require="bootstrap@*" data-semver="3.1.1" src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <style>
+        .center {
+            display: flex;
+            justify-content: center;
+            font-family: Arial, Helvetica, sans-serif;
+            }      
+        h2 {
+                font-family: Arial, Helvetica, sans-serif;
+            }                    
+    </style>
+</head>
+
+<body style="height:100%">
+    <div style="width:95%;">
+    <div class="row">
+        <div class="col-8 text-center align-middle">
+            <h2 id="title_header" class="mx-auto text-center"></h2>
+            <div id="chart" style="width:800px;"></div>
+            <div id="image" style="position: absolute;"></div>
+            <div id="reset_btn" class="btn-group">
+                <button type="button" value="reset" class="btn btn-default">Reset</button>
+            </div>
+        </div>
+        
+        <div class="col-4 text-center" style="vertical-align:middle;">
+            <div class="mx-auto">
+                <br><br>
+                <h4>Data visualization for "Computational analysis of peripheral blood smears detects disease-associated cytomorphologies"</h4>
+
+                <div id="cell_type" class="btn-group">
+                    <h5>Cell type</h5>
+                    <button type="button" value="wbc" class="btn btn-default">WBC</button>
+                    <button type="button" value="rbc" class="btn btn-default">RBC</button>
+                </div>
+                <br>
+                <div id="morphotype" class="btn-group">
+                    <h5>Morphotypes</h5>
+                    <button type="button" value="all" class="btn btn-default">All</button>
+                    <button type="button" value="stable" class="btn btn-default">Stable</button>
+                </div> 
+                <br><br>
+                <div>
+                    <h4>context</h4>
+                    <p>
+                        In this work, we have developed methods that detect and characterize millions of WBC
+                        and RBC in peripheral blood smears across different conditions; with this vast 
+                        collection of cells, we were able to developed methods for weakly supervised learning
+                        which allowed us to 1) infer <b>computational morphotypes</b> (visually cohesive groups
+                        of cells) and 2) use these to predict different diseases.
+                    </p>
+                    <h4>need help?</h4>
+                    <p>
+                        Here, cells are colloured according to their <b>computational morphotype</b> and 
+                        divided according to their cell type. Since our disease predictions are heavily tied 
+                        with the stability of computational morphotypes (i.e. their reproducibility across 
+                        multiple cross-validation folds), we also provide the option to inspect only the 
+                        stable computational morphotypes.
+                    </p>
+                    <p>
+                        Clicking on a point will highlight all cells belonging to the same computational
+                        morphotype.
+                    </p>
+                </div>
+                <div>
+                    <h4>useful links</h4>
+                    <div class="row">
+                        <div class="col-4 align-middle text-center">
+                            <a class="dropdown-item" href="https://www.medrxiv.org/content/10.1101/2022.04.19.22273757v1">
+                                Preprint
+                                <br>
+                                <img src=https://www.cshl.edu/wp-content/uploads/2020/10/Heros_medRxiv.png height="30px">
+                            </a>
+                        </div>
+                        <div class="col-4 align-middle text-center">
+                            <a class="dropdown-item" href="https://github.com/josegcpa/wbs-prediction">
+                                Code
+                                <br>
+                                <img src=https://cdn-icons-png.flaticon.com/512/25/25231.png height="20px">
+                            </a>
+                        </div>
+                        <div class="col-4 align-middle text-center">
+                            <a class="dropdown-item" href="https://hub.docker.com/r/josegcpa/blood-cell-detection">
+                                Docker
+                                <br>
+                                <img src=https://www.docker.com/wp-content/uploads/2022/05/Docker_Temporary_Image_Google_Blue_1080x1080_v1.png height="25px">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+      </div>    
+    </div>  
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+    // functions to get unique values from array
+    Array.prototype.contains = function(v) {
+        for (var i = 0; i < this.length; i++) {
+        if (this[i] === v) return true;
+        }
+        return false;
+    };  
+    Array.prototype.unique = function() {
+        var arr = [];
+        for (var i = 0; i < this.length; i++) {
+        if (!arr.contains(this[i])) {
+            arr.push(this[i]);
+        }
+        }
+        return arr;
+    }
+
+    const color_scale_wbc = d3.scaleOrdinal() // D3 Version 4
+    .domain(['CM1', 'CM2', 'CM3', 'CM4', 'CM5', 'CM6', 'CM7', 'CM8',
+            '1','2','3','5','7','12','15','16',
+            '17','18','21','23','24','25'])
+    .range(["#88e99a", "#1d686e", "#6ad5eb", "#513886", "#d0bcfe", "#a61d99", "#1c9820", "#bce333",
+            "#8f0f12", "#50e316", "#fd1e6e", "#663a40", "#f7b8a2", "#799b51", "#cddb9b", "#474a09",
+            "#f7931e", "#f24219", "#fcd107", "#2e21d0", "#e689eb", "#847fa6"]);
+    const color_scale_rbc = d3.scaleOrdinal() // D3 Version 4
+        .domain(['CM1', 'CM2', 'CM3','CM4','CM5','CM6',
+                'CM7','CM8','CM9',
+                '1','2','10','11','13','14','16','19','20','24'])
+        .range(["#88e99a", "#1d686e", "#6ad5eb", "#513886", "#d0bcfe", "#a61d99",
+                "#1c9820", "#bce333","#8f0f12",
+                "#50e316", "#fd1e6e", "#663a40", "#f7b8a2", "#799b51", "#cddb9b", "#474a09",
+                "#f7931e", "#f24219", "#fcd107"]);
+
+    const color_scales = {
+        "rbc":color_scale_rbc,
+        "wbc":color_scale_wbc}
+
+    function height() {
+        var B = document.body
+        var H = document.documentElement,height
+
+        return Math.max(B.scrollHeight,
+                        B.offsetHeight,
+                        H.clientHeight,
+                        H.scrollHeight,
+                        H.offsetHeight)}
+
+    function width() {
+        var B = document.body
+        var H = document.documentElement,width
+
+        return Math.max(B.scrollWidth,
+                        B.offsetWidth,
+                        H.clientWidth,
+                        H.scrollWidth,
+                        H.offsetWidth)} 
+
+    var image = d3
+        .select("#image")
+        .attr("width", "100px")
+        .attr("height", "100px")
+        .attr("x", "0")
+        .attr("y", "0");
+
+    let dimensions = {
+        width:800,
+        height:700,
+        margin: {
+            left:50,
+            right:50,
+            top:50,
+            bottom:50
+        }
+    }
+    dimensions.container_width = dimensions.width - dimensions.margin.left - dimensions.margin.right
+    dimensions.container_height = dimensions.height - dimensions.margin.top - dimensions.margin.bottom
+
+    d3
+        .select('#chart')
+        .style("width",dimensions.width)
+        .style("height",dimensions.width)
+
+    function clear_plot() {
+        d3
+            .selectAll("#chart")
+            .select("svg")
+            //.transition()
+            //.duration(500)
+            .style("opacity",0)
+            .remove()
+    }
+    const wbc_dataset = d3.json("/json/wbc.json");
+    const rbc_dataset = d3.json("/json/rbc.json");
+    const datasets = {
+        "wbc":wbc_dataset,
+        "rbc":rbc_dataset
+    }
+
+    async function plot_data(cell_type,morphotype) {
+        var svg = d3
+            .select("#chart")
+            .append("svg")
+            .attr("width", dimensions.width)
+            .attr("height", dimensions.height);
+
+        d3.select('#title_header').html(cell_type.toUpperCase() + " morphotypes ("+morphotype+")")
+        var dataset = await datasets[cell_type];
+        if (morphotype === "stable") {
+            dataset = dataset.filter(function(d) {
+                return d['is_stable'] == true
+            })
+        }
+
+        const color_scale = color_scales[cell_type];
+
+        const unique_morphotypes = dataset.map(function(d) {return d.morphotype}).unique()
+
+        const x_scale = d3.scaleLinear()
+            .domain(d3.extent(dataset.map(function(d) {return d.x})))
+            .rangeRound([0,dimensions.container_width])
+            .clamp(true)
+        
+        const y_scale = d3.scaleLinear()
+            .domain(d3.extent(dataset.map(function(d) {return d.y})))
+            .rangeRound([0,dimensions.container_height])
+            .clamp(true)
+
+        const container = svg
+            .append("g")
+            .attr(
+                "transform",
+                `translate(${dimensions.margin.left}, ${dimensions.margin.top})`
+            );
+        
+        container
+            .append('g')
+            .call(d3.axisBottom(x_scale))
+            .style('transform', `translateY(${dimensions.container_height}px)`)
+            .append('text')
+            .attr('x', dimensions.container_width / 2)
+            .attr('y', dimensions.margin.bottom - 20)
+            .attr('fill','black')
+            .text('UMAP1')
+        
+        container
+            .append('g')
+            .call(d3.axisLeft(y_scale))  
+            .classed('axis', true)  
+            .append('text')
+            .attr('x', -dimensions.container_height/2)
+            .attr('y', dimensions.margin.left - 80)
+            .attr('fill', 'black')
+            .text('UMAP2')
+            .style('transform', 'rotate(270deg)')
+            .style('text-anchor', 'middle')
+
+        var points = container
+            .selectAll("circle")
+            .data(dataset)
+            .join("circle")
+            .attr("r",function(d) {
+                if (d['morphotype'].includes("CM") == true) {
+                    return 4
+                } else {
+                    return 2
+                }
+            })
+            .attr('fill-opacity', '0.5')
+            .attr("cx",d => x_scale(d.x))
+            .attr("cy",d => y_scale(d.y))
+            .attr("fill",function(d) {
+                return color_scale(d.morphotype)
+            })
+        // mouse over events
+        points
+            .on('mouseover', function (d, i) {
+                d3.select(this).transition()
+                    .duration('500')
+                    .attr('opacity', '1.0')
+                image_b64 = i['image']
+                image_b64 = image_b64.substring(2,image_b64.length - 1)
+                image
+                    .style('opacity','1.0')
+                // overrides transition in the mouseover
+                image
+                    .transition()
+                    .delay(100)
+                    .style('opacity','1.0')
+
+                image
+                    .selectAll('img')
+                    .remove()
+                image
+                    .html(i['morphotype'] + '<br>')
+                    .style("font-family","Arial, Helvetica, sans-serif")
+                    .style("text-align","center")
+                    .append("img")
+                    .attr('fill-opacity','1.0')
+                    .attr("width", "80px")
+                    .attr("height", "80px")
+                    .attr("src","data:image/png;base64," + image_b64)
+                    .style("border","1px solid");
+                if (d.x > (width()/2)*10) {
+                    image.style("left","15%")
+                } else {
+                    image.style("left","90%")
+                }
+                image.style("top","30%")
+            })
+        points
+            .on('mouseout', function (d, i) {
+                    d3.select(this)
+                        .transition()
+                        .duration('500')
+                        .attr('fill-opacity', '0.5')
+                    image
+                        .transition()
+                        .duration(1000)
+                        .style('opacity', '0.0')
+                    })
+
+        points
+            .on('click', function (d, i) {
+                var morphotype_value = d3
+                    .select("#image")
+                    .text()
+                image
+                    .transition()
+                    .delay(100)
+                    .duration(250)
+                    .style('opacity', '0.0')
+
+                dataset = dataset
+                    .filter(function(d) {
+                        return d["morphotype"] === morphotype_value})
+
+                container
+                    .selectAll("circle")
+                    .remove()
+                points = container
+                    .selectAll("circle")
+                    .data(dataset)
+                    .join("circle")
+                    .attr("r",function(d) {
+                        if (d['morphotype'].includes("CM") == true) {
+                            return 4
+                        } else {
+                            return 2
+                        }
+                    })
+                    .attr('fill-opacity', '0.5')
+                    .attr("cx",d => x_scale(d.x))
+                    .attr("cy",d => y_scale(d.y))
+                    .attr("fill",function(d) {
+                        return color_scale(d.morphotype)
+                    })
+                // mouse over events
+                points
+                    .on('mouseover', function (d, i) {
+                        d3.select(this).transition()
+                            .duration('500')
+                            .attr('opacity', '1.0')
+                        image_b64 = i['image']
+                        image_b64 = image_b64.substring(2,image_b64.length - 1)
+                        image
+                            .style('opacity','1.0')
+                        // overrides transition in the mouseover
+                        image
+                            .transition()
+                            .delay(2000)
+                            .style('opacity','1.0')
+
+                        image
+                            .selectAll('img')
+                            .remove()
+                        image
+                            .html(i['morphotype'] + '<br>')
+                            .style("font-family","Arial, Helvetica, sans-serif")
+                            .style("text-align","center")
+                            .append("img")
+                            .attr('fill-opacity','1.0')
+                            .attr("width", "80px")
+                            .attr("height", "80px")
+                            .attr("src","data:image/png;base64," + image_b64)
+                            .style("border","1px solid");
+                        if (d.x > (width()/2)*10) {
+                            image.style("left","15%")
+                        } else {
+                            image.style("left","90%")
+                        }
+                        image.style("top","30%")
+                    })
+                points
+                    .on('mouseout', function (d, i) {
+                            d3.select(this)
+                                .transition()
+                                .duration('500')
+                                .attr('fill-opacity', '0.5')
+                            image
+                                .transition()
+                                .delay(2000)
+                                .duration(1000)
+                                .style('opacity', '0.0')
+                            })
+            })
+    }
+
+    var current_cell_type = "";
+    var current_morphotype = "";
+    
+    $('#cell_type button').on('click',function(){
+        $(this).addClass('active').siblings().removeClass('active');
+        var value = $(this).val()
+        if (value != current_cell_type) {
+            clear_plot()
+            current_cell_type = value
+            plot_data(value,current_morphotype)
+        }
+    })
+
+    $('#morphotype button').on('click',function(){
+        $(this).addClass('active').siblings().removeClass('active');
+        var value = $(this).val()
+        if (value != current_morphotype) {
+            clear_plot()
+            current_morphotype = value
+            plot_data(current_cell_type,current_morphotype)
+        }
+    })
+
+    $('#reset_btn button').on('click',function(){
+        clear_plot()
+        current_cell_type = "wbc";
+        current_morphotype = "all";
+        $('#cell_type button[value="wbc"]').click();
+        $('#morphotype button[value="all"]').click();
+        plot_data("wbc","all")
+    })
+
+    $('#cell_type button[value="wbc"]').click();
+    $('#morphotype button[value="all"]').click();
+    </script>
+</body>
+</html>
