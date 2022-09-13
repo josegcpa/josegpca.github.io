@@ -10,7 +10,7 @@ locale                   : "en-UK"
 title                    : "José Guilherme de Almeida"
 title_separator          : "-"
 name                     : &name "José Guilherme de Almeida"
-description              : &description "Dreaming of electric sheep. PhD student with Moritz Gerstung and George S. Vassiliou looking at haematological cancers."
+description              : &description "Dreaming of electric sheep. Computational biologist and AI practicioner."
 url                      : https://josegcpa.github.io 
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "josegcpa/josegcpa.github.io"
