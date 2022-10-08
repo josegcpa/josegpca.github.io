@@ -18,7 +18,7 @@ I currently work on developing deep-learning models that can aid in better diagn
 
 # Relevant research experience
 
-**[2022, Present]** Computational Clinical Imaging Group (Nickolas Papanikolaou @ EMBL-EBI) - Postdoctoral fellow
+**[2022, Present]** Computational Clinical Imaging Group (Nickolas Papanikolaou @ Champalimaud Centre for the Unknown) - Postdoctoral fellow
 
 **[2017, 2022]** Cancer Data Science (Moritz Gerstung @ EMBL-EBI) - PhD fellow
 
