@@ -1,0 +1,30 @@
+- name: Jekyll Actions
+  # You may pin to the exact commit or the version.
+  # uses: helaili/jekyll-action@8ca4e612c21f4f90be9e1c9001a0a07b638e2d96
+  uses: helaili/jekyll-action@2.4.0
+  with:
+    # The GITHUB_TOKEN secret
+    token: # optional
+    # The Jekyll environment to build
+    jekyll_env: # optional
+    # The Jekyll website source directory
+    jekyll_src: # optional
+    # Additional Jekyll build arguments (see https://jekyllrb.com/docs/configuration/options/#build-command-options)
+    jekyll_build_options: # optional
+    # The Jekyll Gemfile directory
+    gem_src: # optional
+    # The target branch name the site gets pushed to
+    target_branch: # optional
+    # The relative path where the site gets pushed to
+    target_path: # optional
+    # Will build the Jekyll site without publishing it
+    build_only: # optional
+    # The directory to build your project in
+    build_dir: # optional
+    # Do not overwrite whatever was already published on the target branch
+    keep_history: # optional
+    # Commands to run prior to build and deploy. Useful for ensuring build dependencies are up to date or installing  new dependencies. For example, use `apk --update add  imagemagick` to install ImageMagick.
+
+    pre_build_commands: # optional
+    # When set override the default bundler version provided.
+    bundler_version: # optional
