@@ -1,19 +1,28 @@
-name: jekyll-cd
+name: GH Pages CI
 
 on:
   push:
     branches:
       - master
+    paths-ignore:
+      - "docs/**"
 
 jobs:
-  build:
-
+  build-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 🛎 Check out master
-        uses: actions/checkout@master
+      - name: Checkout repo
+        uses: actions/checkout@v2
+
+      - name: Get cached gems
+        uses: actions/cache@v2
         with:
-          fetch-depth: 1
-      - name: 🧪 Build and deploy
-        uses: victoriadrake/jekyll-cd@master
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+      - name: Build and deploy
+        uses: helaili/jekyll-action@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
