@@ -1,0 +1,18 @@
+I"�<h2 id="pure-ideology"><a href="https://pure-ideology.netlify.app/">Pure ideology!</a></h2>
+
+<p>A data visualizer for the Chapel Hill Expert Survey, which determines the ideological positions of different parties on a wide variety of issues across 32 countries.</p>
+
+<p>Implemented using <code class="language-plaintext highlighter-rouge">d3.js</code> (<code class="language-plaintext highlighter-rouge">javascript</code>).</p>
+
+<h2 id="no-countries-for-rich-men"><a href="https://rich-boys.netlify.app/">No countries for rich men</a></h2>
+
+<p>A GDP data visualizer that hides countries poorer than one of the 10 richest men in the world.</p>
+
+<p>Implemented using <code class="language-plaintext highlighter-rouge">d3.js</code> (<code class="language-plaintext highlighter-rouge">javascript</code>).</p>
+
+<h2 id="são-sondagens-senhor"><a href="https://zegui7.shinyapps.io/B-A-BA-Sondagens/">São sondagens, senhor</a></h2>
+
+<p>Online poll data visualizer (only available in Portuguese), with tools that enable the analysis of poll results.</p>
+
+<p>Implemented in <code class="language-plaintext highlighter-rouge">shiny</code> (<code class="language-plaintext highlighter-rouge">R</code>).</p>
+:ET

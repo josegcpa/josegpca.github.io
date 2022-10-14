@@ -1,0 +1,111 @@
+- title: General Information
+  type: map
+  contents:
+    - name: Name
+      value: José Guilherme de Almeida
+    - name: Date of Birth
+      value: 17th November 1994
+    - name: Languages
+      value: English, Portuguese, Spanish
+
+- title: Education
+  type: time_table
+  contents:
+    - title: PhD on computational biology
+      institution: EMBL-EBI + Cambridge University, Cambridge, UK
+      year: 2017-2022
+      description:
+        - 'Thesis: Computational analyses of blood cells: somatic evolution and morphology'
+    - title: MSc on Cell and Molecular Biology (with honours)
+      institution: Universidade de Coimbra
+      year: 2015-2017
+      description:
+        - 'Thesis: Computational methods for the understanding of protein-based interactions'
+    - title: BSc on Biochemistry
+      institution: Universidade de Coimbra
+      year: 2012-2015
+      description:
+        - 'Final project: Differential expression of PD-1/PD-L1 in individuals with chronic myeloid leukaemia'
+
+- title: Research experience
+  type: time_table
+  contents:
+    - title: Post-doctoral fellow
+      institution: Champalimaud Centre for the Unknown
+      year: 2017-2022
+      description:
+        - With Nickolas Papanikolaou
+        - title: Research topics
+          contents:
+            - Development of robust machine- and deep-learning methods for prostate cancer detection and segmentation in multi-parametric magnetic ressonance imaging
+            - Creation of reproducible pipelines for image registration and radiomic feature extraction
+
+    - title: Doctoral fellow
+      institution: EMBL-EBI
+      year: 2017-2022
+      description:
+        - With Moritz Gerstung and George S. Vassiliou
+        - title: Research topics
+          contents:
+            - Development of machine- and deep-learning methods to detect and characterize vast collections of cells in digitalised whole blood slides in a haematological cancer context. Predictive modelling of disease genotype using machine-learning methods to uncover cytomorphological profiles
+            - Statistical and Bayesian modelling of longitudinal targeted sequencing experiments to uncover the genetic and non-genetic factors driving clonal expansion. Phylogenetic and phylodynamic modelling of the lifelong trajectories of clones using single-cell colonies in healthy individuals
+
+    - title: Student researcher (MSc thesis)
+      institution: CNC-UC
+      year: 2016-2017
+      description:
+        - With Irina Moreira
+        - title: Research topics
+          contents:
+            - Development of machine-learning protocols to determine hot-spots (important residues) in the binding interfaces of proteins
+            - Structural and statistical analysis of large collections of protein-protein complexes and structural characterization of complexes with no known structure
+
+- title: Honors and Awards
+  type: time_table
+  contents:
+    - year: 2017
+      items: 
+        - EMBL PhD fellowship
+    - year: 2017
+      items: 
+        - MSc honours for outstanding academic performance
+
+- title: Technical skills
+  type: nested_list
+  contents:
+    - title: Programming
+      items: 
+        - Python (advanced user), R (advanced user), C (beginner)
+    - title: Machine-learning frameworks
+      items:
+        - '"Traditional ML" - scikit-learn, caret'
+        - 'Deep learning - torch, tensorflow'
+    - title: Computer-vision
+      items:
+        - scikit-image, OpenCV
+    - title: Statistical analysis 
+      items:
+        - Frequentist methods
+        - Bayesian methods (particularly MCMC)
+    - title: Data visualization 
+      items: 
+        - ggplot2 (R)
+
+    - title: Workflow
+      items:
+        - Containerisation (Docker)
+        - Workflow management (snakemake)
+
+- title: Teaching experience
+  type: time_table
+  contents:
+    - year: 2019
+      items:
+        - EMBL Heidelberg
+          EMBL Lautenschlager Summer School
+          Teaching young graduate students about practical bioimage analysis
+    - year: 2016
+      items:
+        - Universidade de Coimbra
+          Workshops on Introductory Programming
+          Teaching young students about programming in Python and R

@@ -9,7 +9,7 @@ layout: none
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="icon" href="/images/microscope.png">
+    <link rel="icon" href="/assets/img/microscope.png">
 
     <title>Blood Morphotypes</title>
 
@@ -26,7 +26,15 @@ layout: none
             }      
         h2 {
                 font-family: Arial, Helvetica, sans-serif;
-            }                    
+            }
+        .image-center {
+            position: absolute;
+            margin: auto;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
     </style>
 </head>
 
@@ -202,6 +210,14 @@ layout: none
         .select('#chart')
         .style("width",dimensions.width)
         .style("height",dimensions.width)
+    
+    d3
+        .select('#chart')
+        .append('img')
+        .attr('src', '/assets/img/802.gif')
+        .attr('class','image-center')
+        .attr("height","32px")
+        .attr("width","32px")
 
     function clear_plot() {
         d3
@@ -426,6 +442,11 @@ layout: none
                                 .style('opacity', '0.0')
                             })
             })
+        d3
+            .select('#chart')
+            .selectAll("img")
+            .style("opacity",0)
+            .remove()
     }
 
     var current_cell_type = "";
