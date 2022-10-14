@@ -1,40 +1,19 @@
----
-- name: Build Jekyll for GitHub Pages
-  uses: actions/jekyll-build-pages@v1.0.5
-  with:
-    # Directory where the source files reside.
-    source: # optional, default is ./
-    # Output directory of the build. Although it can be nested inside the source, it cannot be the same as the source directory.
-    destination: # optional, default is ./_site
-    # Publishes posts with a future date. When set to true, the build is made with the --future option which overrides the future option that may be set in a Jekyll configuration file.
-    future: # optional
-    # The SHA-1 of the git commit for which the build is running. Default to GITHUB_SHA.
-    build_revision: # optional, default is ${{ github.sha }}
-    # Verbose output
-    verbose: # optional, default is true
-    # GitHub token
-    token: # default is ${{ github.token }}
+name: jekyll-cd
 
----
+on:
+  push:
+    branches:
+      - master
 
-- name: Deploy GitHub Pages site
-  uses: actions/deploy-pages@v1.2.1
-  with:
-    # Should this action only emit build telemetry instead of deploying the build artifact?
-    emit_telemetry: # optional, default is false
-    # The status of the previous build.
-    conclusion: # optional
-    # GitHub token
-    token: # default is ${{ github.token }}
-    # Time in milliseconds after which to timeout and cancel the deployment (default: 10 minutes)
-    timeout: # optional, default is 600000
-    # Maximum number of status report errors before cancelling a deployment (default: 10)
-    error_count: # optional, default is 10
-    # Time in milliseconds between two deployment status report (default: 5 seconds)
-    reporting_interval: # optional, default is 5000
-    # Name of the artifact to deploy
-    artifact_name: # optional, default is github-pages
-    # Is this attempting to deploy a pull request as a GitHub Pages preview site? (NOTE: This feature is only in alpha currently and is not available to the public!)
-    preview: # optional, default is false
+jobs:
+  build:
 
----
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🛎 Check out master
+        uses: actions/checkout@master
+        with:
+          fetch-depth: 1
+      - name: 🧪 Build and deploy
+        uses: victoriadrake/jekyll-cd@master
