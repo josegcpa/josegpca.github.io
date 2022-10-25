@@ -6,7 +6,7 @@
     - name: Date of Birth
       value: 17th November 1994
     - name: Languages
-      value: English, Portuguese, Spanish
+      value: English (proficient), Portuguese (native), Spanish (beginner)
 
 - title: Education
   type: time_table
@@ -14,18 +14,15 @@
     - title: PhD on computational biology
       institution: EMBL-EBI + Cambridge University, Cambridge, UK
       year: 2017-2022
-      description:
-        - 'Thesis: Computational analyses of blood cells: somatic evolution and morphology'
+      description: 'Thesis: Computational analyses of blood cells: somatic evolution and morphology'
     - title: MSc on Cell and Molecular Biology (with honours)
       institution: Universidade de Coimbra
       year: 2015-2017
-      description:
-        - 'Thesis: Computational methods for the understanding of protein-based interactions'
+      description: 'Thesis: Computational methods for the understanding of protein-based interactions'
     - title: BSc on Biochemistry
       institution: Universidade de Coimbra
       year: 2012-2015
-      description:
-        - 'Final project: Differential expression of PD-1/PD-L1 in individuals with chronic myeloid leukaemia'
+      description: 'Final project: Differential expression of PD-1/PD-L1 in individuals with chronic myeloid leukaemia'
 
 - title: Research experience
   type: time_table
@@ -63,12 +60,10 @@
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 2017
-      items: 
-        - EMBL PhD fellowship
-    - year: 2017
-      items: 
-        - MSc honours for outstanding academic performance
+    - title: EMBL PhD fellowship
+      year: 2017
+    - title: MSc honours for outstanding academic performance
+      year: 2017
 
 - title: Technical skills
   type: nested_list
@@ -96,16 +91,37 @@
         - Containerisation (Docker)
         - Workflow management (snakemake)
 
+- title: Peer-reviewed research grants
+  type: time_table
+  contents:
+    - title: "Deep learning in cancer drug discovery: a pipeline for the generation of new therapies"
+      year: 2018-2021 
+      description: "Fundação para Ciências e Tecnologia (role: team member)"
+    - title: "Membrane proteins development of new computational approaches and its application to GPCRs"
+      year: 2018-2021 
+      description: "Fundação para Ciências e Tecnologia (role: team member)"
+
+- title: Other activities
+  type: time_table
+  contents:
+    - title: Junior Enterprise for Science and Technology (JEST)
+      year: 2016-2017
+      description: Co-founder
+    - title: 20th EMBL PhD Symposium
+      year: 2018
+      description: Organization, contacting speakers
+    - title: EBI-Sanger-Cambridge PhD Symposium (eSCAMPS) 2019
+      year: 2019
+      description: Organisation, website design
+
 - title: Teaching experience
   type: time_table
   contents:
-    - year: 2019
-      items:
-        - EMBL Heidelberg
-          EMBL Lautenschlager Summer School
-          Teaching young graduate students about practical bioimage analysis
-    - year: 2016
-      items:
-        - Universidade de Coimbra
-          Workshops on Introductory Programming
-          Teaching young students about programming in Python and R
+    - title: EMBL Lautenschlager Summer School
+      year: 2019
+      institution: EMBL Heidelberg
+      description: Teaching young graduate students about practical bioimage analysis
+    - title: Workshops on Introductory Programming
+      year: 2016
+      institution: Universidade de Coimbra
+      description: Teaching young students about programming in Python and R
