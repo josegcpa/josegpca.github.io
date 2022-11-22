@@ -17,7 +17,9 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gems-
       - name: Install ImageMagick
-        run: sudo apt install -y imagemagick imagemagick-dev
+        run: sudo apt-get install -y imagemagick
+      - name: Check ImageMagick is available
+        run: convert --help
       - uses: jeffreytse/jekyll-deploy-action@v0.4.0
         with:
           provider: 'github'
