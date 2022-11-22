@@ -10,16 +10,12 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - uses: actions/cache@v2
+      - uses: actions/cache@v3
         with:
           path: vendor/bundle
           key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
           restore-keys: |
             ${{ runner.os }}-gems-
-      - name: Install ImageMagick
-        run: sudo apt-get install -y imagemagick
-      - name: Check ImageMagick is available
-        run: convert --help
       - uses: jeffreytse/jekyll-deploy-action@v0.4.0
         with:
           provider: 'github'
