@@ -141,7 +141,7 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
           categoryEl.appendChild(linkEl);
         }
       }
-    } catch {
+    } catch(e) {
       // Ignore errors
     }
   };
