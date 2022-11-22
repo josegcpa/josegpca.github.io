@@ -28,4 +28,4 @@ jobs:
           bundler_ver: '>=0'         # Default is latest bundler version
           cname: 'josegcpa.ml'
           actor: ''                  # Default is the GITHUB_ACTOR
-          pre_build_commands: ''     # Installing additional dependencies (Arch Linux)
+          pre_build_commands: 'pacman -S --noconfirm imagemagick'     # Installing additional dependencies (Arch Linux)
