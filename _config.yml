@@ -72,6 +72,7 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 github_username: josegcpa
 gitlab_username: 
 twitter_username: zga_aaa
+mastodon_username: josegcpa
 linkedin_username: josegcpa
 scholar_userid: 4u2Ht8AAAAAJ
 semanticscholar_id: # your Semantic Scholar ID
