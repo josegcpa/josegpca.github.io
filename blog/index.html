@@ -63,6 +63,9 @@ pagination:
         {% endif %}
       </h3>
       <p>{{ post.description }}</p>
+      {% if post.elsewhere != blank and post.elsewhere_link != blank %}
+        <p><b><a href="{{ post.elsewhere_link }}">Published in {{ post.elsewhere }}</a></b></p>
+      {% endif %}
       <p class="post-meta">
         {{ read_time }} min read &nbsp; &middot; &nbsp;
         {{ post.date | date: '%B %-d, %Y' }}
