@@ -86,7 +86,7 @@
       items: 
         - ggplot2 (R)
 
-    - title: Workflow
+    - title: Workflow orchestration
       items:
         - Containerisation (Docker)
         - Workflow management (snakemake)
