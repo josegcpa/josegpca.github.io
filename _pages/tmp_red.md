@@ -1,5 +1,6 @@
 ---
-layout: redirected
-permalink: /queer-redirect/
-redirect_to: https://www.plannedparenthood.org/learn/teens/sexual-orientation/what-does-queer-mean
+
+layout: post
+title: Redirecting...
+redirect: https://docs.google.com/document/d/1B9bCjgtQylHcwkUiwbt6XjSpregZW7Y5OHbXR0T2mzg/edit?usp=sharing
 ---
