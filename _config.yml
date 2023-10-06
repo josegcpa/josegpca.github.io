@@ -226,7 +226,7 @@ display_tags: ['data-viz','fact-checking','polls'] # this tags will be dispalyed
 scholar:
 
   last_name: [Almeida, de Almeida]
-  first_name: [José Guilherme de, José Guilherme]
+  first_name: [José Guilherme de, José Guilherme, José]
 
   style: apa
   locale: en
