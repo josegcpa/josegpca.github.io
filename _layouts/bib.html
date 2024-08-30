@@ -4,11 +4,14 @@
       <div class="row">
         <div class="col-sm-2 {% if entry.preview %}preview{% else %}abbr{% endif %}">
           {%- if entry.pubtype -%}
-            {%- if entry.pubtype == "proceeding" -%}
-              <abbr class="badge" style="background-color:olivedrab">{{entry.pubtype}}</abbr>
-            {%- else -%}
-              <abbr class="badge" style="background-color:darkgreen">{{entry.pubtype}}</abbr>
-            {%- endif -%}
+            {%- assign pubtypes = (entry.pubtype | split: ',') -%}
+            {%- for pubtype in pubtypes -%}
+              {%- if pubtype contains "proceeding" -%}
+                <abbr class="badge" style="background-color:olivedrab">proceeding</abbr>
+              {%- else -%}
+                <abbr class="badge" style="background-color:darkgreen">{{pubtype | strip}}</abbr>
+              {%- endif -%}
+            {%- endfor -%}
           {%- endif -%}
           {%- if entry.first == "yes" -%}
             <abbr class="badge" style="background-color: goldenrod">first author</abbr>
