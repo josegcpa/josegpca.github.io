@@ -8,6 +8,63 @@
     - name: Languages
       value: English (proficient), Portuguese (native), Spanish (beginner)
 
+- title: Technical skills
+  type: nested_list
+  contents:
+    - title: Programming
+      items: 
+        - Python (advanced user), R (advanced user), C (beginner), Javascript (beginner)
+    - title: Machine-learning frameworks
+      items:
+        - '"Traditional ML" - scikit-learn, caret'
+        - Deep learning - torch, lightning, tensorflow
+    - title: Computer-vision
+      items:
+        - scikit-image, OpenCV, torchvision
+    - title: Data science
+      items:
+        - frequentist methods (hypothesis testing, multivariate analyses)
+        - Bayesian methods (MCMC)
+        - Data manipulation (`pandas`, `polars`)
+    - title: Data visualization 
+      items: 
+        - ggplot2 (R)
+        - d3.js (JavaScript)
+    - title: Workflow
+      items:
+        - Version control (git)
+        - Containerisation (Docker)
+        - Workflow management (snakemake)
+
+
+- title: Work experience
+  type: time_table
+  contents:
+    - title: Clinical AI researcher
+      institution: Champalimaud Centre for the Unknown
+      year: 2017-present
+      description:
+      - Development of supervised, semi-supervised and self-supervised deep-learning methods for clinical image classification and segmentation (CT, MRI)
+      - Development of generative AI methods for data harmonization and synthetic data generation
+      - Automation of dataset and organization curation for large multi-centric datasets >10,000 radiology studies
+      - Training and supervision of BSc. and MSc. students
+      - International collaboration with multiple research groups
+
+    - title: Doctoral fellow
+      institution: EMBL-EBI
+      year: 2017-2022
+      description:
+      - Development of machine-, deep-, and multiple instance learning methods to detect, characterize and classify cells and patients
+      - Statistical and Bayesian modelling of longitudinal targeted sequencing experiments to uncover the genetic and non-genetic factors driving clonal expansion. Phylogenetic and phylodynamic modelling of the lifelong trajectories of clones using single-cell colonies in healthy individuals
+
+    - title: Student researcher (MSc thesis)
+      institution: CNC-UC
+      year: 2016-2017
+      description:
+      - Development of machine-learning protocols to determine hot-spots (important residues) in the binding interfaces of proteins
+      - Structural and statistical analysis of large collections of protein-protein complexes and structural characterization of complexes with no known structure
+
+
 - title: Education
   type: time_table
   contents:
@@ -23,105 +80,3 @@
       institution: Universidade de Coimbra
       year: 2012-2015
       description: 'Final project: Differential expression of PD-1/PD-L1 in individuals with chronic myeloid leukaemia'
-
-- title: Research experience
-  type: time_table
-  contents:
-    - title: Post-doctoral fellow
-      institution: Champalimaud Centre for the Unknown
-      year: 2017-present
-      description:
-        - With Nickolas Papanikolaou
-        - title: Research topics
-          contents:
-            - Development of robust machine- and deep-learning methods for prostate cancer detection and segmentation in multi-parametric magnetic ressonance imaging
-            - Creation of reproducible pipelines for image registration and radiomic feature extraction
-
-    - title: Doctoral fellow
-      institution: EMBL-EBI
-      year: 2017-2022
-      description:
-        - With Moritz Gerstung and George S. Vassiliou
-        - title: Research topics
-          contents:
-            - Development of machine- and deep-learning methods to detect and characterize vast collections of cells in digitalised whole blood slides in a haematological cancer context. Predictive modelling of disease genotype using machine-learning methods to uncover cytomorphological profiles
-            - Statistical and Bayesian modelling of longitudinal targeted sequencing experiments to uncover the genetic and non-genetic factors driving clonal expansion. Phylogenetic and phylodynamic modelling of the lifelong trajectories of clones using single-cell colonies in healthy individuals
-
-    - title: Student researcher (MSc thesis)
-      institution: CNC-UC
-      year: 2016-2017
-      description:
-        - With Irina Moreira
-        - title: Research topics
-          contents:
-            - Development of machine-learning protocols to determine hot-spots (important residues) in the binding interfaces of proteins
-            - Structural and statistical analysis of large collections of protein-protein complexes and structural characterization of complexes with no known structure
-
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - title: EMBL PhD fellowship
-      year: 2017
-    - title: MSc honours for outstanding academic performance
-      year: 2017
-
-- title: Technical skills
-  type: nested_list
-  contents:
-    - title: Programming
-      items: 
-        - Python (advanced user), R (advanced user), C (beginner)
-    - title: Machine-learning frameworks
-      items:
-        - '"Traditional ML" - scikit-learn, caret'
-        - 'Deep learning - torch, tensorflow'
-    - title: Computer-vision
-      items:
-        - scikit-image, OpenCV
-    - title: Statistical analysis 
-      items:
-        - Frequentist methods
-        - Bayesian methods (particularly MCMC)
-    - title: Data visualization 
-      items: 
-        - ggplot2 (R)
-
-    - title: Workflow orchestration
-      items:
-        - Containerisation (Docker)
-        - Workflow management (snakemake)
-
-- title: Peer-reviewed research grants
-  type: time_table
-  contents:
-    - title: "Deep learning in cancer drug discovery: a pipeline for the generation of new therapies"
-      year: 2018-2021 
-      description: "Fundação para Ciências e Tecnologia (role: team member)"
-    - title: "Membrane proteins development of new computational approaches and its application to GPCRs"
-      year: 2018-2021 
-      description: "Fundação para Ciências e Tecnologia (role: team member)"
-
-- title: Other activities
-  type: time_table
-  contents:
-    - title: Junior Enterprise for Science and Technology (JEST)
-      year: 2016-2017
-      description: Co-founder
-    - title: 20th EMBL PhD Symposium
-      year: 2018
-      description: Organization, contacting speakers
-    - title: EBI-Sanger-Cambridge PhD Symposium (eSCAMPS) 2019
-      year: 2019
-      description: Organisation, website design
-
-- title: Teaching experience
-  type: time_table
-  contents:
-    - title: EMBL Lautenschlager Summer School
-      year: 2019
-      institution: EMBL Heidelberg
-      description: Teaching young graduate students about practical bioimage analysis
-    - title: Workshops on Introductory Programming
-      year: 2016
-      institution: Universidade de Coimbra
-      description: Teaching young students about programming in Python and R
