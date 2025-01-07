@@ -1,8 +1,8 @@
 ---
-title: "2019 EMBL Lautenschlager Summer School"
+title: "EMBL Summer School"
 collection: teaching
 permalink: /teaching/2019-embl-summer-school
-description: presentation and workshop on machine-learning applied to computer vision
+description: presentation and workshop on machine-learning applied to computer vision to young students
 venue: "EMBL"
 date: 2019-07-23
 location: "Heidelberg, Germany"

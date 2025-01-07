@@ -1,8 +1,8 @@
 ---
-title: "2019 Basic Teaching Module at the EMBL predoc course"
+title: "Basic Teaching Module at EMBL predoc course"
 collection: teaching
 permalink: /teaching/2018-embl-btm
-description: workshop on (some) computer vision feature extraction theory + applying machine-learning to a simple biological problem
+description: workshop on computer vision feature extraction theory + applying machine-learning to simple biological problems
 venue: "EMBL"
 date: 2018-10-16
 location: "Heidelberg, Germany"
