@@ -461,7 +461,6 @@ footer.sticky-bottom {
   }
 
   .grid-sizer, .grid-item {
-    width: 250px;
     margin-bottom: 10px;
   }
 
@@ -670,5 +669,40 @@ html.transition *:after {
       border-left: 5px solid var(--global-theme-color);
       padding: 8px;
     }
+  }
+}
+
+// Custom CSS
+.custom-grid {
+  grid-template-columns: repeat(2,  1fr);
+  display: grid;
+  gap: 10px;
+  grid-auto-flow: dense;
+}
+
+.card {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.card:active {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.custom-card-body {
+  min-width: none;
+  width: none;
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 10px;
+  color: $lavender;
+}
+
+@media (max-width: 576px) {
+  .custom-grid {
+    grid-template-columns: 1fr;
   }
 }
