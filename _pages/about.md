@@ -15,7 +15,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I currently am a post-doc with the [Computational Clinical Imaging Group](https://www.fchampalimaud.org/research/groups/papanikolaou) at the Champalimaud Centre for the Unknown, working on developing novel diagnostic tools for prostate cancer diagnosis using mpMRI as part of the [ProCAncer-I](https://www.procancer-i.eu/) consortium. 
+I am currently doing research with the [Computational Clinical Imaging Group](https://www.fchampalimaud.org/research/groups/papanikolaou) at the Champalimaud Foundation, working on developing novel diagnostic tools for prostate cancer diagnosis using mpMRI as part of the [ProCAncer-I](https://www.procancer-i.eu/) consortium. 
 
 Previously, I did my PhD on the evolution and morphology of blood cells at the EMBL-EBI and the Cambridge University with [Moritz Gerstung](https://www.dkfz.de/en/kuenstliche-intelligenz-in-der-onkologie/index.php) and [George Vassiliou](https://www.stemcells.cam.ac.uk/people/pi/vassiliou), and my Master's thesis on protein binding prediction with [Irina Moreira's Data-Driven Molecular Design group](http://www.moreiralab.com).
 

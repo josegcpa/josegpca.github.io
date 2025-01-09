@@ -4,16 +4,17 @@
 
 // Typography
 
+@import url('https://fonts.googleapis.com/css2?family=' + $font-name + ':ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=' + $title-font-name + '&display=swap');
+
 body {
-  font-family: 'Atkinson Hyperlegible';
+  font-family: $font-name, sans-serif;
   font-style: 'normal';
   font-weight: 400;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Sometype Mono&display=swap');
-
-h1, h2, h3, h4, h5 {
-  font-family: 'Sometype Mono';
+h1, h2, h3, h4, h5, h6 {
+  font-family: $title-font-name, sans-serif;
 }
 
 p, h1, h2, h3, h4, h5, h6, em, div, li, span, strong {
@@ -697,8 +698,12 @@ html.transition *:after {
   width: none;
   flex: 1 1 auto;
   min-height: 1px;
-  padding: 10px;
+  padding: 20px;
   color: $lavender;
+}
+
+.title-font {
+  font-family: $title-font-name;
 }
 
 @media (max-width: 576px) {
