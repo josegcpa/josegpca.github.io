@@ -5,7 +5,6 @@ permalink: /
 position: Clinical AI researcher
 place: <a href="https://www.fchampalimaud.org/">Champalimaud Foundation</a>
 location: Lisbon, Portugal
-emojis: 🧑‍💻🩻🔬
 hobbies: 
   - 🎹 music production
   - 📚 reading
