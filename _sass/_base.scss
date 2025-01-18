@@ -322,8 +322,17 @@ footer.sticky-bottom {
       background-color: inherit;
 
       .badge {
-        color: var(--global-card-bg-color) !important;
-        background-color: var(--global-theme-color) !important;
+        border-radius: 100px;
+        padding: 0.4em 0.6em;
+        background-color: transparent !important;
+        color: var(--global-text-color) !important;
+        border: 1px solid var(--global-text-color);
+        cursor: default;
+
+        &:hover {
+          transform: scale(1.05);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+        }  
       }
 
       .green-badge {
@@ -704,6 +713,72 @@ html.transition *:after {
 
 .title-font {
   font-family: $title-font-name;
+}
+
+.hobby-grid {
+  display: inline-grid;
+  grid-template-columns: auto auto;
+}
+
+.hobby-title {
+  font-size: 0.9em;
+  padding: 0.1em;
+  margin-top: 1.5px;
+  margin-bottom: 1.5px;
+  margin-right: 4px;
+  font-weight: 500;
+  color: var(--global-text-color);
+}
+
+.hobby {
+  display: inline-block;
+  padding: 0.1em 0.7em;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  font-weight: 500;
+  font-size: 0.8em;
+  text-align: center;
+  vertical-align: baseline;
+  border: 1.5px solid var(--global-text-color);
+  border-radius: 100px;
+  color: var(--global-text-color);
+  transition: all 0.2s ease-in-out;
+  cursor: default;
+  
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  }  
+}
+
+.badge-authorship {
+  display: grid;
+  grid-template-columns: 1.0fr 4.0fr;
+  column-gap: 3px;
+  font-weight: 500;
+  border-radius: 100px;
+  padding: 0.1em 0.6em;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  color: var(--global-text-color) !important;
+  border: 1.5px solid var(--global-text-color);
+  font-size: 0.8em;
+  cursor: default;
+  width: 80%;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  }  
+}
+
+.badge-circle {
+  border: 0px solid black;
+  border-radius: 50%;
+  width: 1.0em;
+  height: 1.0em;
+  margin-top: 3px;
+  margin-bottom: 2px;
 }
 
 @media (max-width: 576px) {
