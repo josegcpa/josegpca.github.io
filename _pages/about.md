@@ -2,11 +2,20 @@
 layout: about
 title: about
 permalink: /
-subtitle: Dreaming of electric sheep. Deep learning, computer vision, biology.
+position: Clinical AI researcher
+place: <a href="https://www.fchampalimaud.org/">Champalimaud Foundation</a>
+location: Lisbon, Portugal
+emojis: 🧑‍💻🩻🔬
+hobbies: 
+  - 🎹 music production
+  - 📚 reading
+  - 📊 data viz
+  - 💻🌐 web dev
+  - 📖 learning
 
 profile:
   align: right
-  image: prof_pic.png
+  image: prof_pic.jpg
   image_circular: true # crops the image to make it circular
   address: >
 
@@ -15,8 +24,6 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am currently doing research with the [Computational Clinical Imaging Group](https://www.fchampalimaud.org/research/groups/papanikolaou) at the Champalimaud Foundation, working on developing novel diagnostic tools for prostate cancer diagnosis using mpMRI as part of the [ProCAncer-I](https://www.procancer-i.eu/) consortium. 
+Hi! 👋 I am a data scientist/ML engineer doing research and development on clinical AI. Now, I am developing computational tools for medical image analysis with the [Computational Clinical Imaging Group](https://www.fchampalimaud.org/research/groups/papanikolaou), particularly for prostate cancer diagnosis. 
 
-Previously, I did my PhD on the evolution and morphology of blood cells at the EMBL-EBI and the Cambridge University with [Moritz Gerstung](https://www.dkfz.de/en/kuenstliche-intelligenz-in-der-onkologie/index.php) and [George Vassiliou](https://www.stemcells.cam.ac.uk/people/pi/vassiliou), and my Master's thesis on protein binding prediction with [Irina Moreira's Data-Driven Molecular Design group](http://www.moreiralab.com).
-
-In my free time I do some music production, talk about politics and science, and work on some coding projects usually related with data visualization and society.
+I did my PhD on blood cell evolution and morphology (using stats, computer vision and deep-learning) at EMBL-EBI/Cambridge University with [Moritz Gerstung](https://www.dkfz.de/en/kuenstliche-intelligenz-in-der-onkologie/index.php) and [George Vassiliou](https://www.stemcells.cam.ac.uk/people/pi/vassiliou), and my Master's thesis on protein binding prediction with [Irina Moreira](http://www.moreiralab.com).
