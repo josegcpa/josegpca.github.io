@@ -1,23 +1,23 @@
 ---
 ---
 <!-- _layouts/bib.html -->
-      <div class="row">
+      <div class="row" style="margin-bottom: 20px;">
         <div class="col-sm-2 {% if entry.preview %}preview{% else %}abbr{% endif %}">
           {%- if entry.pubtype -%}
             {%- assign pubtypes = (entry.pubtype | split: ',') -%}
             {%- for pubtype in pubtypes -%}
               {%- if pubtype contains "proceeding" -%}
-                <abbr class="badge" style="background-color:olivedrab">proceeding</abbr>
+                <div class="badge-authorship"><div class="badge-circle" style="background-color: yellowgreen"></div>proceeding</div>
               {%- else -%}
-                <abbr class="badge" style="background-color:darkgreen">{{pubtype | strip}}</abbr>
+                <div class="badge-authorship"><div class="badge-circle" style="background-color:green"></div>{{pubtype | strip}}</div>
               {%- endif -%}
             {%- endfor -%}
           {%- endif -%}
           {%- if entry.first == "yes" -%}
-            <abbr class="badge" style="background-color: goldenrod">first author</abbr>
+            <div class="badge-authorship"><div class="badge-circle" style="background-color: violet"></div>first author</div>
           {%- endif -%}
           {%- if entry.preprint == "yes" -%}
-            <abbr class="badge" style="background-color: grey">preprint</abbr>
+            <div class="badge-authorship"><div class="badge-circle" style="background-color: grey"></div>preprint</div>
           {%- endif -%}
         {%- if entry.preview -%}
           {% if entry.preview contains '://' -%}
@@ -31,9 +31,9 @@
             {%- if site.data.venues[entry.abbr].color != blank -%}
               {%- assign venue_style = site.data.venues[entry.abbr].color | prepend: 'style="background-color:' | append: '"' -%}
             {%- endif -%}
-            <abbr class="badge" {% if venue_style %}{{venue_style}}{% endif %}><a href="{{site.data.venues[entry.abbr].url}}">{{entry.abbr}}</a></abbr>
+            <div class="badge-authorship" {% if venue_style %}{{venue_style}}{% endif %}><a href="{{site.data.venues[entry.abbr].url}}">{{entry.abbr}}</a></div>
           {%- else -%}
-            <abbr class="badge">{{entry.abbr}}</abbr>
+            <div class="badge-authorship">{{entry.abbr}}</div>
           {%- endif -%}
         {%- endif -%}
         </div>
