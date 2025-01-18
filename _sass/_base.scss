@@ -752,19 +752,18 @@ html.transition *:after {
 }
 
 .badge-authorship {
-  display: grid;
-  grid-template-columns: 1.0fr 4.0fr;
+  display: inline-block;
   column-gap: 3px;
   font-weight: 500;
   border-radius: 100px;
-  padding: 0.1em 0.6em;
-  margin-top: 4px;
-  margin-bottom: 4px;
+  padding: 0.1em 0.45em;
+  margin-top: 3px;
+  margin-bottom: 3px;
   color: var(--global-text-color) !important;
   border: 1.5px solid var(--global-text-color);
   font-size: 0.8em;
   cursor: default;
-  width: 80%;
+  white-space: nowrap;
 
   &:hover {
     transform: scale(1.05);
@@ -773,16 +772,32 @@ html.transition *:after {
 }
 
 .badge-circle {
+  display: inline-block;
   border: 0px solid black;
   border-radius: 50%;
-  width: 1.0em;
-  height: 1.0em;
-  margin-top: 3px;
-  margin-bottom: 2px;
+  width: 0.7em;
+  height: 0.7em;
+  margin-right: 4px;
+}
+
+.header-grid {
+  display: grid;
+  grid-template-columns:max-content 1fr;
 }
 
 @media (max-width: 576px) {
   .custom-grid {
     grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 650px) {
+  .header-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 800px) {
+  .col-md-2 {
+    display: block !important;
   }
 }

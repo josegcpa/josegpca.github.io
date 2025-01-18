@@ -1,8 +1,8 @@
 ---
 ---
 <!-- _layouts/bib.html -->
-      <div class="row" style="margin-bottom: 20px;">
-        <div class="col-sm-2 {% if entry.preview %}preview{% else %}abbr{% endif %}">
+      <div class="row bib-row" style="margin-bottom: 20px;">
+        <div class="col-sm-2">
           {%- if entry.pubtype -%}
             {%- assign pubtypes = (entry.pubtype | split: ',') -%}
             {%- for pubtype in pubtypes -%}
