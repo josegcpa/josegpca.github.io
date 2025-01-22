@@ -25,4 +25,7 @@ social: true  # includes social icons at the bottom of the page
 
 Hi! 👋 I am a data scientist/ML engineer doing research and development on clinical AI. Now, I am developing computational tools for medical image analysis with the [Computational Clinical Imaging Group](https://www.fchampalimaud.org/research/groups/papanikolaou), particularly for prostate cancer diagnosis. 
 
-I did my PhD on blood cell evolution and morphology (using stats, computer vision and deep-learning) at EMBL-EBI/Cambridge University with [Moritz Gerstung](https://www.dkfz.de/en/kuenstliche-intelligenz-in-der-onkologie/index.php) and [George Vassiliou](https://www.stemcells.cam.ac.uk/people/pi/vassiliou), and my Master's thesis on protein binding prediction with [Irina Moreira](http://www.moreiralab.com).
+Previously:
+
+- I did my PhD on blood cell evolution and morphology (using stats, computer vision and deep-learning) at EMBL-EBI/Cambridge University with [Moritz Gerstung](https://www.dkfz.de/en/kuenstliche-intelligenz-in-der-onkologie/index.php) and [George Vassiliou](https://www.stemcells.cam.ac.uk/people/pi/vassiliou)
+- I did my my Master's thesis on protein binding prediction with [Irina Moreira](http://www.moreiralab.com)
