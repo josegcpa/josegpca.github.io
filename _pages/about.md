@@ -27,5 +27,5 @@ Hi! 👋 I am a data scientist/ML engineer doing research and development on cli
 
 Previously:
 
-- I did my PhD on blood cell evolution and morphology (using stats, computer vision and deep-learning) at EMBL-EBI/Cambridge University with [Moritz Gerstung](https://www.dkfz.de/en/kuenstliche-intelligenz-in-der-onkologie/index.php) and [George Vassiliou](https://www.stemcells.cam.ac.uk/people/pi/vassiliou)
+- PhD on blood cell evolution and morphology at EMBL-EBI/Cambridge University with [Moritz Gerstung](https://www.dkfz.de/en/kuenstliche-intelligenz-in-der-onkologie/index.php) and [George Vassiliou](https://www.stemcells.cam.ac.uk/people/pi/vassiliou)
 - I did my my Master's thesis on protein binding prediction with [Irina Moreira](http://www.moreiralab.com)
